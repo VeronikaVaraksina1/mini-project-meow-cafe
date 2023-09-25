@@ -23,32 +23,49 @@
   <body>
     <header>
       <div class="container">
-        <nav class="page-nav">
-          <a class="logo" href="./index.html">
-            <svg
-              class="logo-icon"
-              width="116"
-              height="92"
-              aria-label="logo icon"
+        <div class="page-header">
+          <nav class="page-nav">
+            <a class="logo-link" href="./index.html">
+              <svg
+                class="logo-icon"
+                width="74"
+                height="60"
+                aria-label="logo icon"
+              >
+                <use href="./images/icons.svg#icon-logo"></use>
+              </svg>
+              Meow Café</a
             >
-              <use href="./images/icons.svg#icon-logo"></use>
+            <ul class="header-nav-list">
+              <li class="header-nav-list-item">
+                <a href="./index.html" class="nav-link">Início</a>
+              </li>
+              <li class="header-nav-list-item">
+                <a href="" class="nav-link">Produtos</a>
+              </li>
+              <li class="header-nav-list-item">
+                <a href="" class="nav-link">Sobre</a>
+              </li>
+            </ul>
+            <div>
+              <a class="header-login-link" href="">Login</a>
+              <button class="header-order-button" type="button">
+                Delivery
+              </button>
+            </div>
+          </nav>
+
+          <button class="open-menu-button" type="button">
+            <svg
+              class="open-menu-icon"
+              width="24"
+              height="24"
+              aria-label="open menu icon"
+            >
+              <use href="./images/icons.svg#icon-menu"></use>
             </svg>
-            Meow Café</a
-          >
-          <ul class="nav-list">
-            <li class="nav-list-item">
-              <a href="./index.html" class="nav-link">Início</a>
-            </li>
-            <li class="nav-list-item">
-              <a href="" class="nav-link">Produtos</a>
-            </li>
-            <li class="nav-list-item"><a href="" class="nav-link">Sobre</a></li>
-          </ul>
-          <div>
-            <a class="login-link" href="">Login</a>
-            <button class="order-button" type="button">Delivery</button>
-          </div>
-        </nav>
+          </button>
+        </div>
       </div>
     </header>
 
