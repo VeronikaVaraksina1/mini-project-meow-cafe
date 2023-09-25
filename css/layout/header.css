@@ -1,4 +1,4 @@
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .header-nav-list {
     display: none;
   }
@@ -9,9 +9,20 @@
 }
 
 .page-header {
+  background-image: url(../../images/mobile/bg-mobile.png);
+  background-color: #f7f2e8;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  padding-bottom: 39px;
+}
+
+.page-header-navigation {
   display: flex;
   justify-content: start;
   align-items: center;
+
+  padding: 23px 0;
 }
 
 .page-nav {
@@ -25,19 +36,85 @@
   justify-content: center;
   align-items: center;
   gap: 9px;
-  padding: 23px 0;
-  margin-right: 12px;
-}
 
-.logo-icon {
-  fill: 1A1A1A;
+  color: #1a1a1a;
+  font-weight: 700;
+
+  margin-right: 12px;
+
+  fill: #1a1a1a;
 }
 
 .header-order-button {
   display: block;
+  color: var(--secondary-text-color);
+  font-size: 15px;
+  font-weight: 500;
+
+  padding: 9px 24px 15px;
+  border: transparent;
   margin-right: 19px;
+
+  border-radius: 39px;
+  background-color: #431b1b;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.header-order-button:hover,
+.header-order-button:focus {
+  color: var(--primary-text-color);
+  background-color: var(--secondary-text-color);
 }
 
 .open-menu-button {
   display: block;
+  line-height: 0;
+
+  padding: 6px 6px;
+  border: transparent;
+  border-radius: 6px;
+
+  background-color: transparent;
+  fill: var(--primary-text-color);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.open-menu-button:hover,
+.open-menu-button:focus {
+  fill: var(--secondary-text-color);
+  background-color: #431b1b;
+  border: var(--primary-text-color);
+}
+
+/* hero-section */
+
+.header-section-subtitle {
+  font-weight: 700;
+  margin-top: 60px;
+  margin-bottom: 11px;
+}
+
+.header-section-title {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1;
+
+  max-width: 154px;
+  margin-bottom: 12px;
+}
+
+.header-section-description {
+  line-height: 1.6;
+  max-width: 167px;
+}
+
+@media screen and (min-resolution: 192dpi) and (max-width: 767px),
+  screen and (min-resolution: 2dppx) and (max-width: 767px),
+  screen and (min-device-pixel-ratio: 2) and (max-width: 767px) {
+  .hero-section {
+    background-image: url(../../images/mobile/bg-mobile@2x.png);
+  }
 }
