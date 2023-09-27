@@ -1,4 +1,4 @@
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1147px) {
   .header-nav-list {
     display: none;
   }
@@ -6,23 +6,27 @@
   .header-login-link {
     display: none;
   }
-}
 
-.page-header {
-  background-image: url(../../images/mobile/bg-mobile.png);
-  background-color: #f7f2e8;
-  background-repeat: no-repeat;
-  background-position: center;
+  .page-header {
+    background-image: url(../../images/mobile/bg-mobile.png);
+    background-color: #f7f2e8;
+    background-repeat: no-repeat;
+    background-position: center;
 
-  padding-bottom: 39px;
-}
+    padding-bottom: 39px;
+  }
 
-.page-header-navigation {
-  display: flex;
-  justify-content: start;
-  align-items: center;
+  .page-header-navigation {
+    display: flex;
+    justify-content: start;
+    align-items: center;
 
-  padding: 23px 0;
+    padding: 23px 0;
+  }
+
+  .header-order-button {
+    margin-right: 19px;
+  }
 }
 
 .page-nav {
@@ -51,9 +55,8 @@
   font-size: 15px;
   font-weight: 500;
 
-  padding: 9px 24px 15px;
+  padding: 12px 24px;
   border: transparent;
-  margin-right: 19px;
 
   border-radius: 39px;
   background-color: #431b1b;
@@ -111,10 +114,106 @@
   max-width: 167px;
 }
 
-@media screen and (min-resolution: 192dpi) and (max-width: 767px),
-  screen and (min-resolution: 2dppx) and (max-width: 767px),
-  screen and (min-device-pixel-ratio: 2) and (max-width: 767px) {
+@media screen and (min-width: 1148px) {
+  .header-container {
+    background-image: url(../../images/desktop/bg-desktop.png);
+    background-color: #f7f2e8;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right;
+
+    padding-bottom: 65px;
+  }
+
+  .header-nav-list {
+    display: flex;
+    gap: 36px;
+  }
+
+  .page-nav {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 40px;
+  }
+
+  .logo-icon {
+    margin-right: 32px;
+  }
+
+  .logo-link {
+    font-size: 24px;
+    font-weight: 500;
+
+    margin-right: 50px;
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .nav-link {
+    padding: 16px 0;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .header-login-link {
+    padding: 16px 0;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .nav-link,
+  .header-login-link,
+  .header-order-button {
+    font-size: 20px;
+    font-weight: 500;
+  }
+
+  .logo-link:hover,
+  .nav-link:hover,
+  .header-login-link:hover,
+  .logo-link:focus,
+  .nav-link:focus,
+  .header-login-link:focus {
+    color: #1a1a1a;
+  }
+
+  .login-link-plus-order-button {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+  }
+
+  .open-menu-button {
+    visibility: hidden;
+  }
+
+  .header-section-subtitle {
+    font-size: 24px;
+    margin-top: 64px;
+    margin-bottom: 8px;
+  }
+
+  .header-section-title {
+    max-width: 252px;
+    font-size: 80px;
+    margin-bottom: 20px;
+  }
+
+  .header-section-description {
+    max-width: 351px;
+  }
+}
+
+@media screen and (min-resolution: 192dpi) and (max-width: 1147px),
+  screen and (min-resolution: 2dppx) and (max-width: 1147px),
+  screen and (min-device-pixel-ratio: 2) and (max-width: 1147px) {
   .hero-section {
     background-image: url(../../images/mobile/bg-mobile@2x.png);
+  }
+}
+
+@media screen and (min-resolution: 192dpi) and (min-width: 1148px),
+  screen and (min-resolution: 2dppx) and (min-width: 1148px),
+  screen and (min-device-pixel-ratio: 2) and (min-width: 1148px) {
+  .hero-section {
+    background-image: url(../../images/desktop/bg-desktop@2x.png);
   }
 }

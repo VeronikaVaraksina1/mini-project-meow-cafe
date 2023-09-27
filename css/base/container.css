@@ -1,4 +1,4 @@
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1147px) {
   .container {
     max-width: 390px;
     padding: 0 15px;
@@ -6,9 +6,9 @@
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1148px) {
   .container {
-    max-width: 1150px;
+    max-width: 1148px;
     padding: 0 15px;
     margin: 0 auto;
   }
